@@ -1,0 +1,6 @@
+C:\Users\Mister Robo\Documents\My Web Sites\testASPforLemonWay\LemonWayConsoleClient\bin\Debug\LemonWayConsoleClient.exe.config
+C:\Users\Mister Robo\Documents\My Web Sites\testASPforLemonWay\LemonWayConsoleClient\bin\Debug\LemonWayConsoleClient.exe
+C:\Users\Mister Robo\Documents\My Web Sites\testASPforLemonWay\LemonWayConsoleClient\bin\Debug\LemonWayConsoleClient.pdb
+C:\Users\Mister Robo\Documents\My Web Sites\testASPforLemonWay\LemonWayConsoleClient\bin\Debug\LemonWayWebServiceProxy.dll
+C:\Users\Mister Robo\Documents\My Web Sites\testASPforLemonWay\LemonWayConsoleClient\obj\Debug\LemonWayConsoleClient.exe
+C:\Users\Mister Robo\Documents\My Web Sites\testASPforLemonWay\LemonWayConsoleClient\obj\Debug\LemonWayConsoleClient.pdb
