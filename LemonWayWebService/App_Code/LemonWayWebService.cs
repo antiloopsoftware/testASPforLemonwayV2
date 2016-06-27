@@ -47,7 +47,7 @@ public class LemonWayWebService : WebService
 
             JavaScriptSerializer js = new JavaScriptSerializer();
             var response = js.Serialize(keyValues);
-            log.Debug(String.Format("Fibonacci function with parameter {0} has return {1}", n, response.ToString()));
+            log.Error(String.Format("Fibonacci function with parameter {0} has return {1}", n, response.ToString()));
 
             return response;
         }
@@ -73,13 +73,17 @@ public class LemonWayWebService : WebService
             if (ex is XmlException)
             {
                 string errorMessage = "Bad Xml format";
-                log.Debug(String.Format("XmlToJson function with parameter {0} has return {1}", xml, errorMessage));
+                log.Error(String.Format("XmlToJson function with parameter {0} has return {1}", xml, errorMessage));
 
                 return errorMessage;
             }
 
             else
+            {
+                log.Fatal(String.Format("XmlToJson function with parameter {0} has return {1}", xml, ex.Message));
+
                 return ex.Message;
+            }
         }
     }
 
@@ -87,7 +91,7 @@ public class LemonWayWebService : WebService
     {
         if (n < 1 || n > 100)
         {
-            log.Debug(String.Format("getFibonacci function with parameter {0} has return {1}", n, -1));
+            log.Error(String.Format("getFibonacci function receives a bad parameter : {0}", n, -1));
             return -1;
         }
 
@@ -105,8 +109,6 @@ public class LemonWayWebService : WebService
             a = b;
             b = temp + b;
         }
-
-        log.Debug(String.Format("getFibonacci function with parameter {0} has return {1}", n, a));
 
         return a;
     }
